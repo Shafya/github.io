@@ -1,0 +1,338 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+header nav {
+    position: relative;
+}
+
+header nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    font-weight: 500;
+    padding: 10px;
+    color: #2c3e50;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #e67e22;
+}
+
+/* Герой-раздел */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1533068562437-68897b31f563?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #e67e22;
+    padding: 15px 30px;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #cf6d17;
+}
+
+/* Разделы */
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+/* Контактная информация */
+.contact-info .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.contact-card {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+}
+
+.contact-card i {
+    font-size: 40px;
+    color: #e67e22;
+    margin-bottom: 20px;
+}
+
+.contact-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.contact-card p {
+    font-size: 16px;
+    color: #555555;
+}
+
+.contact-card a {
+    color: #e67e22;
+    transition: color 0.3s;
+}
+
+.contact-card a:hover {
+    color: #cf6d17;
+}
+
+/* Нотариальные действия */
+.services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card i {
+    font-size: 40px;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+/* Сделки с недвижимостью */
+.real-estate .real-estate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.real-estate-card {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.real-estate-card:hover {
+    transform: translateY(-10px);
+}
+
+.real-estate-card i {
+    font-size: 40px;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+.real-estate-card h3 {
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+/* Иные сделки */
+.other-services .other-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.other-service-card {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.other-service-card:hover {
+    transform: translateY(-10px);
+}
+
+.other-service-card i {
+    font-size: 40px;
+    color: #9b59b6;
+    margin-bottom: 20px;
+}
+
+.other-service-card h3 {
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+/* Кнопка "Наверх" */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #e67e22;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s;
+    z-index: 1000;
+}
+
+#backToTop:hover {
+    background-color: #cf6d17;
+}
+
+/* Подвал сайта */
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+footer .footer-content {
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    header nav .menu-icon {
+        display: block;
+        color: #2c3e50;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-menu {
+        display: flex;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
